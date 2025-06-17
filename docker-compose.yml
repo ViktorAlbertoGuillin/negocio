@@ -1,0 +1,11 @@
+services:
+  angular-app:
+    build:
+      context: .   # Usa el Dockerfile en el mismo directorio
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app         # Monta tu código fuente local en el contenedor
+      - /app/node_modules  # Evita conflictos con node_modules local
+    command: npm run start -- --host 0.0.0.0 --port 4200

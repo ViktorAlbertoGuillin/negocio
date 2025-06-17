@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  background-image: url('https://www.shutterstock.com/image-photo/medialunas-mate-260nw-584631298.jpg'); /* ← Aquí pegas tu enlace */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+
+.logo {
+  width: 150px; /* Puedes ajustar el tamaño */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 3rem;
+  //background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+:host {
+  display: block;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.fondo {
+  position: relative;
+  height: 90vh; // 90% de la pantalla
+  margin: 5vh 0; // espacio arriba y abajo
+  overflow: hidden;
+  border-radius: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.shutterstock.com/image-photo/medialunas-mate-260nw-584631298.jpg'); // ← cambia por la URL de tu imagen
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) brightness(0.8); // difuminado y oscurecido
+    z-index: 1;
+  }
+}
+
+.contenido {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+}

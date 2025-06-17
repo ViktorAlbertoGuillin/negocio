@@ -1,5 +1,31 @@
 # Negocio
 
+# Construir la imagen
+```bash
+docker build -t angular-app-dev .
+```
+
+# Ejecutar el contenedor y mapear el puerto
+```bash
+docker run -p 4200:4200 angular-app-dev
+```
+# detener el contenedor
+```bash
+docker stop angular-app-dev
+```
+
+# eliminar todos los contenedores
+```bash
+docker container prune
+```
+
+
+
+
+
+
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
 
 ## Development server

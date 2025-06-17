@@ -1,0 +1,33 @@
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="https://marketplace.canva.com/EAFIAc5N8S0/2/0/1600w/canva-logo-panader%C3%ADa-y-pasteler%C3%ADa-circular-caf%C3%A9-NMaWIPvMNdI.jpg" alt="Logo">
+      <span>Pasteleria Lo de Maria</span>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="pedido-btn">Hacer Pedido</button>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <button class="pedido-btn">Hacer Pedido</button>
+  </div>
+</header>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileNav');
+    menu.classList.toggle('active');
+  }
+</script>
