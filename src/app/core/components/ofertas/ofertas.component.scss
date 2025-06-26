@@ -1,0 +1,38 @@
+.oferta-banner {
+  width: 100%;
+  background: linear-gradient(135deg, #f6c9b6, #f1a589); // Fondo a toda la sección
+  color: #5c2e0f;
+  padding: 60px 20px;
+}
+
+.oferta-contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.oferta-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.oferta-detalle {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.oferta-btn {
+  background-color: #5c2e0f;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.oferta-btn:hover {
+  background-color: #402211;
+}

@@ -1,0 +1,32 @@
+.acerca {
+  background-image: url("../../../../assets/images/fondopasteles.png");
+  background-repeat: repeat;
+  background-size: 150px; /* 🟢 tamaño pequeño del patrón */
+  background-position: center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acerca-contenido {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.acerca-titulo {
+  font-size: 2.5rem;
+  color: #B57F50;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.acerca-texto {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+}
