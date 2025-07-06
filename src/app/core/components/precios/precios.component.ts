@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CommonModule, NgClass} from '@angular/common';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-precios',
@@ -10,7 +10,7 @@ import {CommonModule, NgClass} from '@angular/common';
 export class PreciosComponent {
   productos = [
     {
-      nombre: 'Medialunas',
+      nombre: 'Medialunas por docena',
       descripcion: 'Clásicas, dulces y esponjosas',
       precio: 600,
       imagen: '/assets/productos/medialunas.png'
@@ -28,7 +28,7 @@ export class PreciosComponent {
       imagen: '/assets/productos/alfajores.png'
     },
     {
-      nombre: 'Pan Casero',
+      nombre: 'Pan Casero por unidad (500g)',
       descripcion: 'Receta tradicional, crocante por fuera y suave por dentro',
       precio: 500,
       imagen: 'assets/productos/pan-casero.png'
@@ -41,7 +41,7 @@ export class PreciosComponent {
     },
     {
       nombre: 'Bizcochuelo de Chocolate',
-      descripcion: 'Húmedo y con cobertura de chocolate',
+      descripcion: 'Húmedo y esponjoso, ideal para tortas',
       precio: 1000,
       imagen: '/assets/productos/biscochuelo.png'
     }
