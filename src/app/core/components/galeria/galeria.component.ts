@@ -8,16 +8,11 @@ import {CommonModule} from '@angular/common';
   styleUrl: './galeria.component.scss'
 })
 export class GaleriaComponent {
-  productos = [
-    { nombre: 'Tarta de Frutilla', img: 'assets/images/productos/producto1.jpg' },
-    { nombre: 'Pan Casero', img: 'assets/images/productos/producto2.jpg' },
-    { nombre: 'Cupcakes', img: 'assets/images/productos/producto3.jpg' },
-  ];
 
   clientes = [
-    { nombre: 'María', img: 'assets/images/clientes/cliente1.jpg' },
-    { nombre: 'Lucas', img: 'assets/images/clientes/cliente2.jpg' },
-    { nombre: 'Valentina', img: 'assets/images/clientes/cliente3.jpg' },
+    { nombre: 'Juli', img: '/assets/clientes/juli.png' },
+    { nombre: 'Cande', img: '/assets/clientes/cande2.png' },
+    { nombre: 'Octavio', img: '/assets/clientes/octavio2.png' },
   ];
 
 }
